@@ -135,8 +135,8 @@ EOF
 # 第三方插件选择:
 cat >> .config <<EOF
 #CONFIG_PACKAGE_luci-app-oaf=y #应用过滤
-CONFIG_PACKAGE_luci-app-clash=y
-#CONFIG_PACKAGE_luci-app-openclash=y #OpenClash
+#CONFIG_PACKAGE_luci-app-clash=y
+CONFIG_PACKAGE_luci-app-openclash=y #OpenClash
 #CONFIG_PACKAGE_luci-app-serverchan=y #微信推送
 #CONFIG_PACKAGE_luci-app-eqos=y #IP限速
 CONFIG_PACKAGE_luci-app-adguardhome=y #ADguardhome
@@ -154,16 +154,16 @@ EOF
 #EOF
 
 # Passwall插件:
-#cat >> .config <<EOF
-#CONFIG_PACKAGE_luci-app-passwall=y
-#CONFIG_PACKAGE_https-dns-proxy=y
-#CONFIG_PACKAGE_naiveproxy=y
-#CONFIG_PACKAGE_kcptun-client=y
-#CONFIG_PACKAGE_chinadns-ng=y
-#CONFIG_PACKAGE_brook=y
-#CONFIG_PACKAGE_trojan-go=y
-#CONFIG_PACKAGE_shadowsocks-rust-sslocal=y
-#EOF
+cat >> .config <<EOF
+CONFIG_PACKAGE_luci-app-passwall=y
+CONFIG_PACKAGE_https-dns-proxy=y
+CONFIG_PACKAGE_naiveproxy=y
+CONFIG_PACKAGE_kcptun-client=y
+CONFIG_PACKAGE_chinadns-ng=y
+CONFIG_PACKAGE_brook=y
+CONFIG_PACKAGE_trojan-go=y
+CONFIG_PACKAGE_shadowsocks-rust-sslocal=y
+EOF
 
 # 常用LuCI插件:
 cat >> .config <<EOF
@@ -205,7 +205,7 @@ CONFIG_PACKAGE_luci-app-watchcat=y
 CONFIG_PACKAGE_luci-app-unblockmusic=y #解锁网易云灰色歌曲
 #CONFIG_PACKAGE_luci-app-unblockneteasemusic=y
 #CONFIG_PACKAGE_luci-app-unblockmusic_INCLUDE_UnblockNeteaseMusic_NodeJS=y
-#CONFIG_PACKAGE_luci-app-unblockmusic_INCLUDE_UnblockNeteaseMusic_Go=y
+CONFIG_PACKAGE_luci-app-unblockmusic_INCLUDE_UnblockNeteaseMusic_Go=y
 # CONFIG_PACKAGE_luci-app-airplay2 is not set #Apple AirPlay2音频接收服务器
 # CONFIG_PACKAGE_luci-app-music-remote-center is not set #PCHiFi数字转盘遥控
 # CONFIG_PACKAGE_luci-app-usb-printer is not set #USB打印机
@@ -232,10 +232,10 @@ EOF
 cat >> .config <<EOF
 CONFIG_PACKAGE_luci-theme-atmaterial=y
 #CONFIG_PACKAGE_luci-theme-bootstrap=y
-#CONFIG_PACKAGE_luci-theme-argon_new=y
+CONFIG_PACKAGE_luci-theme-argon_new=y
 #CONFIG_PACKAGE_luci-theme-argon
-#CONFIG_PACKAGE_luci-theme-netgear=y
-#CONFIG_PACKAGE_luci-theme-edge=y
+CONFIG_PACKAGE_luci-theme-netgear=y
+CONFIG_PACKAGE_luci-theme-edge=y
 CONFIG_PACKAGE_luci-theme-material=y
 EOF
 
